@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>DCF Calculator</title></head>
+<body>
+    <h1>DCF Calculator</h1>
+    <form method="post" action="/calculate">
+        Forecast Period (years): <input name="years" required><br><br>
+        Cash Flows (comma-separated): <input name="cashFlows" required><br><br>
+        Discount Rate (%): <input name="discountRate" required><br><br>
+        Terminal Growth Rate (%): <input name="terminalGrowthRate" required><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+    <p style="color:red;">[[${error}]]</p>
+</body>
+</html>
